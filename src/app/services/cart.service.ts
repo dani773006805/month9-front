@@ -48,10 +48,10 @@ export class CartService {
     let accessToken: string = this.oktaAuthService.getAccessToken();
     console.log(accessToken);
     const headers = {
-      'Authorization': 'Bearer ' + accessToken,
-      'Access-Control-Allow-Origin': '*'
+      'Authorization': 'Bearer ' + accessToken
+      // 'Access-Control-Allow-Origin': '*'
     }
-    let addUrl: string = `http://localhost:8888/carts/increment/${theCartItem.id}/${this.email}`;
+    let addUrl: string = `http://localhost:8888/carts/increment/${theCartItem.id}`;
     console.log(addUrl);
     return this.httpClient.post(addUrl, null, {'headers': headers});
 
