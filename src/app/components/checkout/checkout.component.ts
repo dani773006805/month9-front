@@ -5,6 +5,7 @@ import {Luv2ShopValidators} from "../../validators/luv2-shop-validators";
 import {CartService} from "../../services/cart.service";
 import {CheckoutService} from "../../services/checkout.service";
 import {Router} from "@angular/router";
+import {error} from "util";
 
 @Component({
   selector: 'app-checkout',
@@ -18,6 +19,8 @@ export class CheckoutComponent implements OnInit {
 
   creditCardYears: number[] = [];
   creditCardMonths: number[] = [];
+  defaultMonth = new Date().getMonth();
+  defaultYear = new Date().getFullYear();
 
 
   constructor(private formBuilder: FormBuilder,
@@ -38,8 +41,8 @@ export class CheckoutComponent implements OnInit {
         nameOnCard: new FormControl('', [Validators.required, Validators.minLength(3), Luv2ShopValidators.notOnlyWhitespace]),
         cardNumber: new FormControl('', [Validators.required, Validators.pattern('[0-9]{16}')]),
         securityCode: new FormControl('', [Validators.required, Validators.pattern('[0-9]{3}')]),
-        expirationMonth: new FormControl(''),
-        expirationYear: new FormControl(''),
+        expirationMonth: new FormControl(this.defaultMonth),
+        expirationYear: new FormControl(this.defaultYear),
       }),
     });
 
@@ -100,36 +103,30 @@ export class CheckoutComponent implements OnInit {
     }
 
 
-    // call REST API via the CheckoutService
-
     const creditCard = this.checkoutFormGroup.controls['creditCard'].value;
-
+    console.log(creditCard);
 
 
     this.checkoutService.placeOrder(creditCard).subscribe(
       {
         next: response => {
-          if(response.status===201){
-          alert(`Your order has been received. You can view detials in orders section`)
-          // reset cart
           this.resetCart();
-          }
         },
         error: err => {
-          alert(`There was an error: ${err.message}`);
+          if (err.status === 201) {
+            alert(`Your order has been received`)
+            this.resetCart();
+          } else {
+            alert(`There was an error: ${err.message}`);
+          }
         }
       }
-    )
+    );
   }
 
   resetCart() {
     this.cartService.cartItems = [];
-    // this.cartService.totalPrice.next(0);
-    // this.cartService.totalQuantity.next(0);
-
     this.checkoutFormGroup.reset();
-
-    // navigate back to the products page
     this.router.navigateByUrl("/products");
   }
 

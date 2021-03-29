@@ -20,7 +20,7 @@ export class ReviewServiceService {
 
   }
   getReviews(theProductId:string){
-    let url:string=`http://localhost:8888/reviews/products/${theProductId}`;
+    let url:string=`http://localhost:8888/reviews/products/${theProductId}?page=0&size=100`;
     return this.httpClient.get(url);
   }
 }

@@ -6,7 +6,7 @@ import {OktaAuthService} from "@okta/okta-angular";
   providedIn: 'root'
 })
 export class OrderHistoryService {
-  private orderUrl = `http://localhost:8888/orders`;
+  private orderUrl = `http://localhost:8888/orders?page=0&size=100`;
 
   constructor(private httpClient: HttpClient,
               private oktaAuthService:OktaAuthService) {
