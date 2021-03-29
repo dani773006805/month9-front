@@ -8,6 +8,25 @@
     <h4>Description</h4>
     <p>{{product.description}}</p>
 
+    <div *ngIf="reviews.length>0" class="reviews">
+      <h3>Reviews</h3>
+      <table class="table table-bordered">
+        <tr>
+          <th>Review author</th>
+          <th>Review date</th>
+          <th>Review text</th>
+        </tr>
+        <tr *ngFor="let rev of reviews">
+          <td>{{rev.userEmail}}</td>
+          <td>{{rev.date}}</td>
+          <td>{{rev.text}}</td>
+        </tr>
+      </table>
+    </div>
+    <div *ngIf="reviews.length==0" class="alert alert-warning col-md-12" role="alert">
+      No reviews yet
+    </div>
+
     <a routerLink="/category/{{product.categoryId}}" class="pt-5">
       Back to Product List
     </a>

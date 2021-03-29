@@ -5,9 +5,6 @@ import {Luv2ShopValidators} from "../../validators/luv2-shop-validators";
 import {CartService} from "../../services/cart.service";
 import {CheckoutService} from "../../services/checkout.service";
 import {Router} from "@angular/router";
-import {Order} from "../../common/order";
-import {OrderItem} from "../../common/order-item";
-import {CreditCard} from "../../common/credit-card";
 
 @Component({
   selector: 'app-checkout',
@@ -32,7 +29,7 @@ export class CheckoutComponent implements OnInit {
 
   ngOnInit(): void {
 
-    this.reviewCartDetails();
+    // this.reviewCartDetails();
 
 
     this.checkoutFormGroup = this.formBuilder.group({
@@ -41,13 +38,14 @@ export class CheckoutComponent implements OnInit {
         nameOnCard: new FormControl('', [Validators.required, Validators.minLength(3), Luv2ShopValidators.notOnlyWhitespace]),
         cardNumber: new FormControl('', [Validators.required, Validators.pattern('[0-9]{16}')]),
         securityCode: new FormControl('', [Validators.required, Validators.pattern('[0-9]{3}')]),
-        expirationMonth: [''],
-        expirationYear: [''],
+        expirationMonth: new FormControl(''),
+        expirationYear: new FormControl(''),
       }),
     });
 
     // populate credit card months
-    const startMonth: number = new Date().getMonth() + 1;    this.luv2ShopFormService.getCreditCardMonths(startMonth).subscribe(
+    const startMonth: number = new Date().getMonth() + 1;
+    this.luv2ShopFormService.getCreditCardMonths(startMonth).subscribe(
       data => {
         this.creditCardMonths = data;
       }
@@ -64,18 +62,18 @@ export class CheckoutComponent implements OnInit {
   }
 
 
-  private reviewCartDetails() {
-
-    // subscribe to cartService.totalQuantity
-    this.cartService.totalQuantity.subscribe(
-      totalQuantity => this.totalQuantity = totalQuantity
-    );
-
-    // subscribe to cartService.totalPrice
-    this.cartService.totalPrice.subscribe(
-      totalPrice => this.totalPrice = totalPrice
-    );
-  }
+  // private reviewCartDetails() {
+  //
+  //   // subscribe to cartService.totalQuantity
+  //   this.cartService.totalQuantity.subscribe(
+  //     totalQuantity => this.totalQuantity = totalQuantity
+  //   );
+  //
+  //   // subscribe to cartService.totalPrice
+  //   this.cartService.totalPrice.subscribe(
+  //     totalPrice => this.totalPrice = totalPrice
+  //   );
+  // }
 
 
   get creditCardNameOnCard() {
@@ -96,7 +94,6 @@ export class CheckoutComponent implements OnInit {
 
 
   onSubmit() {
-    console.log("Handling the submit button");
     if (this.checkoutFormGroup.invalid) {
       this.checkoutFormGroup.markAllAsTouched();
       return;
@@ -106,15 +103,17 @@ export class CheckoutComponent implements OnInit {
     // call REST API via the CheckoutService
 
     const creditCard = this.checkoutFormGroup.controls['creditCard'].value;
-    console.log(creditCard);
+
 
 
     this.checkoutService.placeOrder(creditCard).subscribe(
       {
         next: response => {
-          alert(`Your order has been received.\nOrder tracking number: ${response.orderTrackingNumber}`)
+          if(response.status===201){
+          alert(`Your order has been received. You can view detials in orders section`)
           // reset cart
           this.resetCart();
+          }
         },
         error: err => {
           alert(`There was an error: ${err.message}`);
@@ -124,12 +123,10 @@ export class CheckoutComponent implements OnInit {
   }
 
   resetCart() {
-    // reset cart data
     this.cartService.cartItems = [];
-    this.cartService.totalPrice.next(0);
-    this.cartService.totalQuantity.next(0);
+    // this.cartService.totalPrice.next(0);
+    // this.cartService.totalQuantity.next(0);
 
-    // reset the form
     this.checkoutFormGroup.reset();
 
     // navigate back to the products page

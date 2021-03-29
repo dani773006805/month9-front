@@ -1,0 +1,15 @@
+.review-item{
+  padding: 1vh 2vw;
+}
+.review-item p{
+  margin: 1px;
+  padding: 1px;
+}
+.reviews{
+  margin-top: 5vh;
+}
+.reviews h3{
+  color: #05143f;
+  text-align: center;
+
+}

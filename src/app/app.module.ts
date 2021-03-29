@@ -22,6 +22,8 @@ import {
   OktaCallbackComponent
 } from '@okta/okta-angular';
 import myAppConfig from './config/my-app-config';
+import { OrderHistoryComponent } from './components/order-history/order-history.component';
+import {ReviewComponentComponent} from "./components/review-component/review-component.component";
 
 const oktaconfig=Object.assign({
   onAuthRequired:(oktaAuth, injector)=>{
@@ -33,12 +35,12 @@ const oktaconfig=Object.assign({
 },myAppConfig.oidc);
 
 const routes:Routes=[
-  // {path:'members',component:MembersPageComponent, canActivate:[OktaAuthGuard]},
+  {path:'review/:productId',component:ReviewComponentComponent,canActivate:[OktaAuthGuard]},
+  {path:'order-history',component:OrderHistoryComponent, canActivate:[OktaAuthGuard]},
   {path:'login/callback',component:OktaCallbackComponent},
   {path:'login',component:LoginComponent},
-
   {path:'checkout', component: CheckoutComponent},
-  {path:'cart-details',component: CartDetailsComponent},
+  {path:'cart-details',component: CartDetailsComponent,canActivate:[OktaAuthGuard]},
   {path:'products/:id',component:ProductDetailsComponent},
   {path:'search/:keyword',component:ProductListComponent},
   {path:'category/:id',component:ProductListComponent},
@@ -58,7 +60,9 @@ const routes:Routes=[
     CartDetailsComponent,
     CheckoutComponent,
     LoginComponent,
-    LoginStatusComponent
+    LoginStatusComponent,
+    OrderHistoryComponent,
+    ReviewComponentComponent
   ],
   imports: [
     RouterModule.forRoot(routes),

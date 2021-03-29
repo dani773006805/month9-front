@@ -18,8 +18,6 @@ export class CartStatusComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.checkAuthentication();
-    this.updateCartStatus();
   }
 
   checkAuthentication() {
@@ -31,13 +29,13 @@ export class CartStatusComponent implements OnInit {
   }
 
 
-  updateCartStatus() {
-    this.cartService.totalPrice.subscribe(
-      data => this.totalPrice = data
-    );
-    this.cartService.totalQuantity.subscribe(
-      data => this.totalQuantity = data
-    );
-  }
+  // updateCartStatus() {
+  //   this.cartService.totalPrice.subscribe(
+  //     data => this.totalPrice = data
+  //   );
+  //   this.cartService.totalQuantity.subscribe(
+  //     data => this.totalQuantity = data
+  //   );
+  // }
 
 }

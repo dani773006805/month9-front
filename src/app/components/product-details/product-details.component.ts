@@ -4,6 +4,8 @@ import {ProductService} from "../../services/product.service";
 import {ActivatedRoute} from "@angular/router";
 import {CartItem} from "../../common/cart-item";
 import {CartService} from "../../services/cart.service";
+import {ReviewServiceService} from "../../services/review-service.service";
+import {Review} from "../../common/review";
 
 @Component({
   selector: 'app-product-details',
@@ -11,12 +13,15 @@ import {CartService} from "../../services/cart.service";
   styleUrls: ['./product-details.component.css']
 })
 export class ProductDetailsComponent implements OnInit {
+  reviews:Review[]=[];
   product: Product = new Product();
+  productId:string=undefined;
   isAuthenticated: boolean = false;
 
   constructor(private productService: ProductService,
               private cartService: CartService,
-              private route: ActivatedRoute) {
+              private route: ActivatedRoute,
+              private reviewService:ReviewServiceService) {
   }
 
   ngOnInit(): void {
@@ -24,6 +29,7 @@ export class ProductDetailsComponent implements OnInit {
     this.route.paramMap.subscribe(() => {
       this.handleProductDetails();
     });
+    this.handleReviews();
   }
 
   checkAuthentication() {
@@ -36,9 +42,19 @@ export class ProductDetailsComponent implements OnInit {
 
   handleProductDetails() {
     const theProductId: number = +this.route.snapshot.paramMap.get('id');
+    this.productId=theProductId.toString();
     this.productService.getProduct(theProductId).subscribe(
       data => {
         this.product = data;
+      }
+    )
+  }
+  handleReviews(){
+    this.reviewService.getReviews(this.productId).subscribe(
+      data=>{
+        this.reviews=data['content'];
+        console.log(this.reviews);
+
       }
     )
   }
@@ -46,7 +62,7 @@ export class ProductDetailsComponent implements OnInit {
   addToCart(theProduct: Product) {
     console.log(`Adding to cart: ${theProduct.name}, ${theProduct.unitPrice}`);
     let cartItem = new CartItem(theProduct);
-    this.cartService.addToCart(cartItem);
+    this.cartService.addToCart(cartItem,cartItem.productId);
   }
 
 }

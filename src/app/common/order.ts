@@ -1,4 +1,9 @@
+import {OrderItem} from "./order-item";
+
 export class Order {
-  totalQuantity:number;
-  totalPrice:number;
+  private id: number;
+  totalQuantity: number;
+  totalPrice: number;
+  dateCreated: string;
+  private orderItems: OrderItem[];
 }

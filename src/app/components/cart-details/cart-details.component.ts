@@ -12,38 +12,49 @@ export class CartDetailsComponent implements OnInit {
   cartItems: CartItem[] = [];
   totalPrice: number = 0;
   totalQuantity: number = 0;
-  isAuthenticated:boolean=false;
-
   constructor(private cartService: CartService,
-              private productService:ProductService) {
+              private productService: ProductService) {
   }
 
   ngOnInit(): void {
-    this.checkAuthentication();
     this.listCartDetails();
+    this.cartService.persistCartItems();
   }
-  checkAuthentication(){
-    this.productService.isAuthenticated.subscribe(
-      (result)=>{
-        this.isAuthenticated=result;
+
+
+  listCartDetails() {
+    this.getCardDetail();
+     this.cartService.takeFromDataBase().subscribe(
+      data=>{
+        this.cartItems=data;
+      }
+    );
+  }
+  getCardDetail(){
+    this.cartService.takeCartDetailFromDatabase().subscribe(
+      data=>{
+        this.totalQuantity=data['totalQuantity'];
+        this.totalPrice=data['totalPrice'];
       }
     )
   }
 
-  listCartDetails() {
-    this.cartItems = this.cartService.cartItems;
-    this.cartService.totalPrice.subscribe(data => this.totalPrice = data);
-    this.cartService.totalQuantity.subscribe(data => this.totalQuantity = data);
-    this.cartService.computeCartTotals();
+  incrementQuantity(theCartItem: CartItem) {
+    this.cartService.addToCart(theCartItem,theCartItem.productId);
+    this.listCartDetails();
+    this.listCartDetails();
   }
-  incrementQuantity(theCartItem:CartItem){
-    this.cartService.addToCart(theCartItem);
+
+  decrementQuantity(theCartItem: CartItem) {
+    this.cartService.decrementQuantity(theCartItem,theCartItem.productId);
+    this.listCartDetails();
+    this.listCartDetails();
   }
-  decrementQuantity(theCartItem:CartItem){
-    this.cartService.decrementQuantity(theCartItem);
-  }
-  remove(theCartItem:CartItem){
-    this.cartService.remove(theCartItem);
+
+  remove(theCartItem: CartItem) {
+    this.cartService.remove(theCartItem,theCartItem.productId);
+    this.listCartDetails();
+    this.listCartDetails();
   }
 
 }
