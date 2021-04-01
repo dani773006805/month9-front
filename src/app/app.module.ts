@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { ProductListComponent } from './components/product-list/product-list.component';
-import { HttpClientModule} from "@angular/common/http";
+import {HttpClient, HttpClientModule} from "@angular/common/http";
 import {ProductService} from "./services/product.service";
 import {Routes, RouterModule, Router} from "@angular/router";
 import { ProductCategoryMenuComponent } from './components/product-category-menu/product-category-menu.component';
@@ -24,6 +24,8 @@ import {
 import myAppConfig from './config/my-app-config';
 import { OrderHistoryComponent } from './components/order-history/order-history.component';
 import {ReviewComponentComponent} from "./components/review-component/review-component.component";
+import {TranslateLoader, TranslateModule} from "@ngx-translate/core";
+import {TranslateHttpLoader} from "@ngx-translate/http-loader";
 
 const oktaconfig=Object.assign({
   onAuthRequired:(oktaAuth, injector)=>{

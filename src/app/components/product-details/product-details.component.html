@@ -3,18 +3,18 @@
     <img src="{{product.imageUrl}}" class="detail-img">
     <h3>{{product.name}}</h3>
     <div class="price">{{product.unitPrice | currency:'USD'}}</div>
-    <button *ngIf="isAuthenticated" (click)="addToCart(product)" class="btn btn-primary btn-sm">Add to cart</button>
+    <button i18n *ngIf="isAuthenticated" (click)="addToCart(product)" class="btn btn-primary btn-sm">Add to cart</button>
     <hr>
-    <h4>Description</h4>
+    <h4 i18n>Description</h4>
     <p>{{product.description}}</p>
 
     <div *ngIf="reviews.length>0" class="reviews">
-      <h3>Reviews</h3>
+      <h3 i18n>Reviews</h3>
       <table class="table table-bordered">
         <tr>
-          <th>Review author</th>
-          <th>Review date</th>
-          <th>Review text</th>
+          <th i18n>Review author</th>
+          <th i18n>Review date</th>
+          <th i18n>Review text</th>
         </tr>
         <tr *ngFor="let rev of reviews">
           <td>{{rev.userEmail}}</td>
@@ -23,11 +23,11 @@
         </tr>
       </table>
     </div>
-    <div *ngIf="reviews.length==0" class="alert alert-warning col-md-12" role="alert">
+    <div i18n *ngIf="reviews.length==0" class="alert alert-warning col-md-12" role="alert">
       No reviews yet
     </div>
 
-    <a routerLink="/category/{{product.categoryId}}" class="pt-5">
+    <a i18n routerLink="/category/{{product.categoryId}}" class="pt-5">
       Back to Product List
     </a>
   </div>

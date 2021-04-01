@@ -10,12 +10,11 @@
             <a routerLink="/products/{{tem.id}}">
               <h1>{{tem.name}}</h1>
             </a>
-
             <div class="price">{{tem.unitPrice | currency:'USD'}}</div>
-            <button *ngIf="isAuthenticated"  (click)="addToCart(tem)" class="btn btn-primary btn-sm">Add to cart</button>
+            <button i18n *ngIf="isAuthenticated"  (click)="addToCart(tem)" class="btn btn-primary btn-sm">Add to cart</button>
           </div>
         </div>
-        <div *ngIf="products?.length==0" class="alert alert-warning col-md-12" role="alert">
+        <div i18n *ngIf="products?.length==0" class="alert alert-warning col-md-12" role="alert">
           No products found.
         </div>
       </div>
@@ -37,7 +36,7 @@
                 </ngb-pagination>
               </div>
               <div class="col-md-3 mt-2" style="text-align: right;">
-                <span class="mr-2">Page Size</span>
+                <span i18n class="mr-2">Page Size</span>
                 <select (change)="updatePageSize($event.target.value)">
                   <option selected="true">10</option>
                   <option>20</option>

@@ -1,0 +1,771 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en-US" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="ngb.alert.close" datatype="html">
+        <source>Close</source>
+        <target>Close</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@ng-bootstrap/ng-bootstrap/src/alert/alert.ts</context>
+          <context context-type="linenumber">43,49</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.carousel.slide-number" datatype="html">
+        <source> Slide <x id="INTERPOLATION" equiv-text="ubject(false);"/> of <x id="INTERPOLATION_1" equiv-text="private _pauseO"/> </source>
+        <target> Slide <x id="INTERPOLATION" equiv-text="ubject(false);"/> of <x id="INTERPOLATION_1" equiv-text="private _pauseO"/> </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@ng-bootstrap/ng-bootstrap/src/carousel/carousel.ts</context>
+          <context context-type="linenumber">109,117</context>
+        </context-group>
+        <note priority="1" from="description">Currently selected slide number read by screen reader</note>
+      </trans-unit>
+      <trans-unit id="ngb.carousel.previous" datatype="html">
+        <source>Previous</source>
+        <target>Previous</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@ng-bootstrap/ng-bootstrap/src/carousel/carousel.ts</context>
+          <context context-type="linenumber">130,134</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.carousel.next" datatype="html">
+        <source>Next</source>
+        <target>Next</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@ng-bootstrap/ng-bootstrap/src/carousel/carousel.ts</context>
+          <context context-type="linenumber">147,157</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.datepicker.select-month" datatype="html">
+        <source>Select month</source>
+        <target>Select month</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@ng-bootstrap/ng-bootstrap/src/datepicker/datepicker-navigation-select.ts</context>
+          <context context-type="linenumber">41,47</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@ng-bootstrap/ng-bootstrap/src/datepicker/datepicker-navigation-select.ts</context>
+          <context context-type="linenumber">48,53</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.datepicker.select-year" datatype="html">
+        <source>Select year</source>
+        <target>Select year</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@ng-bootstrap/ng-bootstrap/src/datepicker/datepicker-navigation-select.ts</context>
+          <context context-type="linenumber">62,65</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@ng-bootstrap/ng-bootstrap/src/datepicker/datepicker-navigation-select.ts</context>
+          <context context-type="linenumber">74</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.datepicker.previous-month" datatype="html">
+        <source>Previous month</source>
+        <target>Previous month</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@ng-bootstrap/ng-bootstrap/src/datepicker/datepicker-navigation.ts</context>
+          <context context-type="linenumber">13,14</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@ng-bootstrap/ng-bootstrap/src/datepicker/datepicker-navigation.ts</context>
+          <context context-type="linenumber">22,27</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.datepicker.next-month" datatype="html">
+        <source>Next month</source>
+        <target>Next month</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@ng-bootstrap/ng-bootstrap/src/datepicker/datepicker-navigation.ts</context>
+          <context context-type="linenumber">47,52</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@ng-bootstrap/ng-bootstrap/src/datepicker/datepicker-navigation.ts</context>
+          <context context-type="linenumber">61,69</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.pagination.first" datatype="html">
+        <source>««</source>
+        <target>««</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@ng-bootstrap/ng-bootstrap/src/pagination/pagination.ts</context>
+          <context context-type="linenumber">124,126</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.pagination.previous" datatype="html">
+        <source>«</source>
+        <target>«</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@ng-bootstrap/ng-bootstrap/src/pagination/pagination.ts</context>
+          <context context-type="linenumber">133,135</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.pagination.next" datatype="html">
+        <source>»</source>
+        <target>»</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@ng-bootstrap/ng-bootstrap/src/pagination/pagination.ts</context>
+          <context context-type="linenumber">138,144</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.pagination.last" datatype="html">
+        <source>»»</source>
+        <target>»»</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@ng-bootstrap/ng-bootstrap/src/pagination/pagination.ts</context>
+          <context context-type="linenumber">147,151</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.pagination.first-aria" datatype="html">
+        <source>First</source>
+        <target>First</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@ng-bootstrap/ng-bootstrap/src/pagination/pagination.ts</context>
+          <context context-type="linenumber">154,157</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.pagination.previous-aria" datatype="html">
+        <source>Previous</source>
+        <target>Previous</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@ng-bootstrap/ng-bootstrap/src/pagination/pagination.ts</context>
+          <context context-type="linenumber">160,163</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.pagination.next-aria" datatype="html">
+        <source>Next</source>
+        <target>Next</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@ng-bootstrap/ng-bootstrap/src/pagination/pagination.ts</context>
+          <context context-type="linenumber">187,189</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.pagination.last-aria" datatype="html">
+        <source>Last</source>
+        <target>Last</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@ng-bootstrap/ng-bootstrap/src/pagination/pagination.ts</context>
+          <context context-type="linenumber">195,202</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.progressbar.value" datatype="html">
+        <source><x id="INTERPOLATION" equiv-text="ber { return th"/></source>
+        <target><x id="INTERPOLATION" equiv-text="ber { return th"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@ng-bootstrap/ng-bootstrap/src/progressbar/progressbar.ts</context>
+          <context context-type="linenumber">27,35</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.timepicker.HH" datatype="html">
+        <source>HH</source>
+        <target>HH</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@ng-bootstrap/ng-bootstrap/src/timepicker/timepicker.ts</context>
+          <context context-type="linenumber">40,42</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.timepicker.hours" datatype="html">
+        <source>Hours</source>
+        <target>Hours</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@ng-bootstrap/ng-bootstrap/src/timepicker/timepicker.ts</context>
+          <context context-type="linenumber">46,48</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.timepicker.MM" datatype="html">
+        <source>MM</source>
+        <target>MM</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@ng-bootstrap/ng-bootstrap/src/timepicker/timepicker.ts</context>
+          <context context-type="linenumber">54,56</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.timepicker.minutes" datatype="html">
+        <source>Minutes</source>
+        <target>Minutes</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@ng-bootstrap/ng-bootstrap/src/timepicker/timepicker.ts</context>
+          <context context-type="linenumber">60,62</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.timepicker.increment-hours" datatype="html">
+        <source>Increment hours</source>
+        <target>Increment hours</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@ng-bootstrap/ng-bootstrap/src/timepicker/timepicker.ts</context>
+          <context context-type="linenumber">66,68</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.timepicker.decrement-hours" datatype="html">
+        <source>Decrement hours</source>
+        <target>Decrement hours</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@ng-bootstrap/ng-bootstrap/src/timepicker/timepicker.ts</context>
+          <context context-type="linenumber">74,76</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.timepicker.increment-minutes" datatype="html">
+        <source>Increment minutes</source>
+        <target>Increment minutes</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@ng-bootstrap/ng-bootstrap/src/timepicker/timepicker.ts</context>
+          <context context-type="linenumber">82,83</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.timepicker.decrement-minutes" datatype="html">
+        <source>Decrement minutes</source>
+        <target>Decrement minutes</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@ng-bootstrap/ng-bootstrap/src/timepicker/timepicker.ts</context>
+          <context context-type="linenumber">87,89</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.timepicker.SS" datatype="html">
+        <source>SS</source>
+        <target>SS</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@ng-bootstrap/ng-bootstrap/src/timepicker/timepicker.ts</context>
+          <context context-type="linenumber">93,97</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.timepicker.seconds" datatype="html">
+        <source>Seconds</source>
+        <target>Seconds</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@ng-bootstrap/ng-bootstrap/src/timepicker/timepicker.ts</context>
+          <context context-type="linenumber">102,103</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.timepicker.decrement-seconds" datatype="html">
+        <source>Decrement seconds</source>
+        <target>Decrement seconds</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@ng-bootstrap/ng-bootstrap/src/timepicker/timepicker.ts</context>
+          <context context-type="linenumber">109,113</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.timepicker.PM" datatype="html">
+        <source><x id="INTERPOLATION" equiv-text=";private _mi"/></source>
+        <target><x id="INTERPOLATION" equiv-text=";private _mi"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@ng-bootstrap/ng-bootstrap/src/timepicker/timepicker.ts</context>
+          <context context-type="linenumber">111,119</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.timepicker.AM" datatype="html">
+        <source><x id="INTERPOLATION" equiv-text="olean;/**"/></source>
+        <target><x id="INTERPOLATION" equiv-text="olean;/**"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@ng-bootstrap/ng-bootstrap/src/timepicker/timepicker.ts</context>
+          <context context-type="linenumber">116,128</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.timepicker.increment-seconds" datatype="html">
+        <source>Increment seconds</source>
+        <target>Increment seconds</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@ng-bootstrap/ng-bootstrap/src/timepicker/timepicker.ts</context>
+          <context context-type="linenumber">118,128</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.toast.close-aria" datatype="html">
+        <source>Close</source>
+        <target>Закрыть</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/@ng-bootstrap/ng-bootstrap/src/toast/toast.ts</context>
+          <context context-type="linenumber">70,76</context>
+        </context-group>
+      </trans-unit>
+
+      <trans-unit id="c01f2d14bf116d490001c0f8c4e7a64da00eb1dc" datatype="html">
+        <source>assets/images/logo.jpg</source>
+        <target>assets/images/logo1.jpg</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.ts</context>
+          <context context-type="linenumber">11</context>
+        </context-group>
+      </trans-unit>
+
+
+      <trans-unit id="847171f94c5e932a67df0c3b4d57e4e10d844b52" datatype="html">
+        <source>About Us</source>
+        <target>О нас</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.ts</context>
+          <context context-type="linenumber">11</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="02e9e69ddcbf93de9fd38bc4d0f312142658610d" datatype="html">
+        <source>Contact Us</source>
+        <target>Контакты</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.ts</context>
+          <context context-type="linenumber">11</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="85b79c9064aed1ead31ace985f31aa1363f6bdaf" datatype="html">
+        <source>Help</source>
+        <target>Помощь</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.ts</context>
+          <context context-type="linenumber">11</context>
+        </context-group>
+      </trans-unit>
+
+      <trans-unit id="ede24e9cca9409c355934fc41c53b6cb34387224" datatype="html">
+        <source>Total Price: <x id="INTERPOLATION" equiv-text="{{totalPrice | currency:&apos;USD&apos;}}"/></source>
+        <target>Итоговая цена: <x id="INTERPOLATION" equiv-text="{{totalPrice | currency:&apos;USD&apos;}}"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/cart-details/cart-details.component.html</context>
+          <context context-type="linenumber">59,47</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="a2ba884eba8ce045444989c1ce1a87c04d9f9224" datatype="html">
+        <source>Checkout</source>
+        <target>Продолжать</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/cart-details/cart-details.component.html</context>
+          <context context-type="linenumber">59</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="a73111d91982286c214fdeaf42b1d6275929973e" datatype="html">
+        <source>Quantity:</source>
+        <target>Количество:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/cart-details/cart-details.component.html</context>
+          <context context-type="linenumber">59</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="019d4bd6a5690f0cfa0ecf346a4e6bf7f0d8debb" datatype="html">
+        <source>Remove</source>
+        <target>Удалить</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/cart-details/cart-details.component.html</context>
+          <context context-type="linenumber">59</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="fbfdedba98a0fadd3be11e78a7b2ad58fae77b41" datatype="html">
+        <source>Subtotals:</source>
+        <target>Промежуточные итоги:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/cart-details/cart-details.component.html</context>
+          <context context-type="linenumber">59</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="67c49eb3c1f449ee55d598fae640d7c820788b37" datatype="html">
+        <source> Your shopping cart is empty </source>
+        <target> Ваша корзина пуста </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/cart-details/cart-details.component.html</context>
+          <context context-type="linenumber">59</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="c2a6fb1a4824135da5b492b7796285ecc4d5ea5c" datatype="html">
+        <source>Product Image</source>
+        <target>Изображение продукта</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/cart-details/cart-details.component.ts</context>
+          <context context-type="linenumber">33,42</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8250bc21409d843769af934adb7889093a590696" datatype="html">
+        <source>Product Detail</source>
+        <target>Подробная инфо о продукте</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/cart-details/cart-details.component.ts</context>
+          <context context-type="linenumber">55,61</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ca30c1aa79fb5ab487fbd2caa4ca01f2f6691d70" datatype="html">
+        <source>Quantity</source>
+        <target>Количество</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/cart-details/cart-details.component.ts</context>
+          <context context-type="linenumber">61</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="b8c7adfcaeb31b93e1c9c9b39d8c5ad117951c9d" datatype="html">
+        <source>Total Quantity: <x id="INTERPOLATION" equiv-text="{{totalQuantity}}"/></source>
+        <target>Общее количество: <x id="INTERPOLATION" equiv-text="{{totalQuantity}}"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/cart-details/cart-details.component.ts</context>
+          <context context-type="linenumber">61</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="b6450bd8df455350907d306d42861a392dff93d4" datatype="html">
+        <source>basket</source>
+        <target>корзина</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/cart-status/cart-status.component.ts</context>
+          <context context-type="linenumber">33,42</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="29709e5282eff3d1060e6d86505d8626bdd23d33" datatype="html">
+        <source>Credit Card</source>
+        <target>Кредитная карта</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/checkout/checkout.component.ts</context>
+          <context context-type="linenumber">28,38</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="b2ebaa12c6c5cbbf0053662c1406d8e9bcd4f185" datatype="html">
+        <source>Card Type</source>
+        <target>Тип карты</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/checkout/checkout.component.ts</context>
+          <context context-type="linenumber">43,49</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7c260a18a0c65bfb138da071a4d8d091ad7837ba" datatype="html">
+        <source>Visa</source>
+        <target>Виза</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/checkout/checkout.component.ts</context>
+          <context context-type="linenumber">67,76</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="18fc75b77a033fb748e7104143998b50b5d9a58d" datatype="html">
+        <source>Mastercard</source>
+        <target>Мастер Кард</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/checkout/checkout.component.ts</context>
+          <context context-type="linenumber">92,102</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="cc927e92ada1f250e8c5ea7884d0b1294be56635" datatype="html">
+        <source>Name on Card</source>
+        <target>Название карты</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/checkout/checkout.component.ts</context>
+          <context context-type="linenumber">119,124</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="c51ae86488666fc691751bf76d88811b37505c00" datatype="html">
+        <source>Card Number</source>
+        <target>Номер карты</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/checkout/checkout.component.ts</context>
+          <context context-type="linenumber">137</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7a13cf48afc449a70e67b35babf557cd687958bd" datatype="html">
+        <source>Security Code</source>
+        <target>Код безопасности</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/checkout/checkout.component.ts</context>
+          <context context-type="linenumber">137</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="99b1fd64e69e5aba0c2cd741198a0b57625ffe9e" datatype="html">
+        <source>Expiration Month</source>
+        <target>Месяц истечения</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/checkout/checkout.component.ts</context>
+          <context context-type="linenumber">137</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="c5da85be133e1be4ca3860ba7137086fdab3b590" datatype="html">
+        <source>Expiration Year</source>
+        <target>Год истечения</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/checkout/checkout.component.ts</context>
+          <context context-type="linenumber">137</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4604e5822ba84a95aec8892f27764b577e5537d0" datatype="html">
+        <source>Purchase</source>
+        <target>Оформлять заказ</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/checkout/checkout.component.ts</context>
+          <context context-type="linenumber">137</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="87895cf360238e1068395ab634263ea851091e0f" datatype="html">
+        <source> Credit card type is required </source>
+        <target> Укажите тип кредитной карты </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/checkout/checkout.component.ts</context>
+          <context context-type="linenumber">137</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6a2989a27b0cba4d7a9b6fba97964723024708aa" datatype="html">
+        <source> Name is required </source>
+        <target> Имя обязательно </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/checkout/checkout.component.ts</context>
+          <context context-type="linenumber">137</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="c90e1897555143a74ef5c57ca0c6220f00f67806" datatype="html">
+        <source> Name must be at least 2 characters long </source>
+        <target> Имя должно состоять не менее чем из 2 символов </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/checkout/checkout.component.ts</context>
+          <context context-type="linenumber">137</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="336dd3f6a22c3d60069b29de34c97ae848683740" datatype="html">
+        <source> Card number is required </source>
+        <target> Номер карты требуется </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/checkout/checkout.component.ts</context>
+          <context context-type="linenumber">137</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="9f1e828073b9c32ced43a60041afaf359043de97" datatype="html">
+        <source> Card number must be 16 digits long </source>
+        <target> Номер карты должен состоять из 16 цифр </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/checkout/checkout.component.ts</context>
+          <context context-type="linenumber">137</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="9bac12d95195e8b7d1e8a2691785a3e5d0066117" datatype="html">
+        <source> Security code is required </source>
+        <target> Требуется защитный код </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/checkout/checkout.component.ts</context>
+          <context context-type="linenumber">137</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="991dd149ecbda03828acfeddebe9bba71d63f4c4" datatype="html">
+        <source> Security code must be 3 digits long </source>
+        <target> Защитный код должен состоять из 3 цифр </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/checkout/checkout.component.ts</context>
+          <context context-type="linenumber">137</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2ee8aa861426229d39295daaeaa54257a1130694" datatype="html">
+        <source> Your shopping cart is empty</source>
+        <target>Ваша корзина пустая еще</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/checkout/checkout.component.ts</context>
+          <context context-type="linenumber">137</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="37d4203d87e1ccb6f757367d0dca541d2a0f485b" datatype="html">
+        <source> Welcome </source>
+        <target> Добро пожаловать </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/login-status/login-status.component.ts</context>
+          <context context-type="linenumber">30</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="12910217fdcdbca64bee06f511639b653d5428ea" datatype="html">
+        <source> Login </source>
+        <target> Войти </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/login-status/login-status.component.ts</context>
+          <context context-type="linenumber">30</context>
+        </context-group>
+      </trans-unit>
+
+      <trans-unit id="0f4914f5caefbc549aa6bf6dc12b4dbe6a0a4bff" datatype="html">
+        <source> Logout </source>
+        <target> Выйти </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/login-status/login-status.component.ts</context>
+          <context context-type="linenumber">30</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="75ca45ad1c6f9f2d34d20b0abb748f6f421c6223" datatype="html">
+        <source> Orders </source>
+        <target> Заказы </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/login-status/login-status.component.ts</context>
+          <context context-type="linenumber">30</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7832e2a827413468192f3475443862a281bb5023" datatype="html">
+        <source>Total Quantity: <x id="INTERPOLATION" equiv-text="{{order.totalQuantity}}"/></source>
+        <target>Итоговое количество: <x id="INTERPOLATION" equiv-text="{{order.totalQuantity}}"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/order-history/order-history.component.html</context>
+          <context context-type="linenumber">20,11</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ddb96d29e84f8b40543e8558facda61a99e676b3" datatype="html">
+        <source>Date of Purchase: <x id="INTERPOLATION" equiv-text="{{order.dateCreated}}"/></source>
+        <target>Дата оформления: <x id="INTERPOLATION" equiv-text="{{order.dateCreated}}"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/order-history/order-history.component.html</context>
+          <context context-type="linenumber">20,12</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="99cdd0f3f4dd67fd8c5825dd944b184bee931f57" datatype="html">
+        <source>add review</source>
+        <target>Оставить отзыв</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/order-history/order-history.component.html</context>
+          <context context-type="linenumber">21,25</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="41f36397ad6af5a602f8227623b54913e974c5d4" datatype="html">
+        <source> No orders found </source>
+        <target>Не найдено</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/order-history/order-history.component.html</context>
+          <context context-type="linenumber">39</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="e47b764d7242fb497831598b881b63335cc7863d" datatype="html">
+        <source>Your Orders</source>
+        <target>Ваши заказы</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/order-history/order-history.component.ts</context>
+          <context context-type="linenumber">34</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="f11e8ad16291a3f2c43be20de2e9ad3a7b536e7f" datatype="html">
+        <source>Total Price: <x id="INTERPOLATION" equiv-text="{{order.totalPrice | currency:&apos;USD&apos;}}"/></source>
+        <target>Итоговая цена: <x id="INTERPOLATION" equiv-text="{{order.totalPrice | currency:&apos;USD&apos;}}"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/order-history/order-history.component.ts</context>
+          <context context-type="linenumber">34</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="04201f9d27abd7d6f58a4328ab98063ce1072006" datatype="html">
+        <source>Categories</source>
+        <target>Категории</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/product-category-menu/product-category-menu.component.ts</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="eec715de352a6b114713b30b640d319fa78207a0" datatype="html">
+        <source>Description</source>
+        <target>Описание</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/product-details/product-details.component.ts</context>
+          <context context-type="linenumber">30,44</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="859212fdf36646e4a752af564f3b55c3493efc0b" datatype="html">
+        <source> Back to Product List </source>
+        <target>Назад на список продуктов</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/product-details/product-details.component.ts</context>
+          <context context-type="linenumber">62,69</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4eaa396a0686e4c364766a65e22dac1e59b9e100" datatype="html">
+        <source>Add to cart</source>
+        <target>Добавить</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/product-details/product-details.component.ts</context>
+          <context context-type="linenumber">69</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/product-list/product-list.component.ts</context>
+          <context context-type="linenumber">67,74</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="d49bde1d32c842fec80a04300a10454542104e70" datatype="html">
+        <source>Reviews</source>
+        <target>Отзывы</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/product-details/product-details.component.ts</context>
+          <context context-type="linenumber">69</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="890c158bd9a4342f274445b4d239aa6004608bde" datatype="html">
+        <source>Review author</source>
+        <target>Автор</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/product-details/product-details.component.ts</context>
+          <context context-type="linenumber">69</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="f0bac7b0aa237fd98e8c807fa640da20aa3e9f7d" datatype="html">
+        <source>Review date</source>
+        <target>Дата</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/product-details/product-details.component.ts</context>
+          <context context-type="linenumber">69</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6edb767bb9ff3eb3f50ed3d06186f2e2ea772cd7" datatype="html">
+        <source>Review text</source>
+        <target>Текст отзыва</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/product-details/product-details.component.ts</context>
+          <context context-type="linenumber">69</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="cc7790f7990c023ec43af797a9b7bc4a5a732b7b" datatype="html">
+        <source> No reviews yet </source>
+        <target>Пока никто не оставил отзыв</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/product-details/product-details.component.ts</context>
+          <context context-type="linenumber">69</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="9cade23e740a2cd1c3cf2536d863c83d08523f24" datatype="html">
+        <source>Page Size</source>
+        <target>Размер страницы</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/product-list/product-list.component.ts</context>
+          <context context-type="linenumber">34,47</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2522bc6d7f4e95f221145f4db4517891ad2030b5" datatype="html">
+        <source> No products found. </source>
+        <target>Не найдено</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/product-list/product-list.component.ts</context>
+          <context context-type="linenumber">85,94</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="c434ee86a73c84dd0ed62b03871937b66aaca63a" datatype="html">
+        <source>leave your review, it will help us</source>
+        <target>Оставьте отзыв, это поможет нам</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/review-component/review-component.component.ts</context>
+          <context context-type="linenumber">29,42</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="f6755cff4957d5c3c89bafce5651f1b6fa2b1fd9" datatype="html">
+        <source>Add</source>
+        <target>Добавить</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/review-component/review-component.component.ts</context>
+          <context context-type="linenumber">55,60</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="731b12751c78a2bc4f19bced69c4c5cf5dcd1d6b" datatype="html">
+        <source> Text is required </source>
+        <target>Текст требуется</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/review-component/review-component.component.ts</context>
+          <context context-type="linenumber">68</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="41840d2fbdc9963427c4d81e4dcbdd812c81ed0d" datatype="html">
+        <source> must be at least 4 characters </source>
+        <target>Требуется минимум 4 символа</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/review-component/review-component.component.ts</context>
+          <context context-type="linenumber">68</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5be6f6bff6a58cd10211f55147b734491ccab6cf" datatype="html">
+        <source>Search for data ...</source>
+        <target>Искать продукт ...</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/search/search.component.ts</context>
+          <context context-type="linenumber">21</context>
+        </context-group>
+      </trans-unit>
+
+      <trans-unit id="b10c8765bf1f210b49391c4ecae1d1ed4ae8ab7a" datatype="html">
+        <source> Search </source>
+        <target> Найти </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/search/search.component.ts</context>
+          <context context-type="linenumber">21</context>
+        </context-group>
+      </trans-unit>
+
+    </body>
+  </file>
+</xliff>

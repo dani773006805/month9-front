@@ -11,6 +11,7 @@ export class LoginStatusComponent implements OnInit {
   userFullName: string;
   storage:Storage=sessionStorage;
 
+
   constructor(private oktaAuthService: OktaAuthService) {
   }
 

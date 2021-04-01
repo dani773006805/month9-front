@@ -3,16 +3,16 @@
     <div class="container-fluid">
       <form [formGroup]="reviewFormGroup" (ngSubmit)="onSubmit()">
         <div formGroupName="review" class="form-area">
-          <h1>leave your review, it will help us</h1>
+          <h1 i18n>leave your review, it will help us</h1>
           <div class="row">
             <div class="col-md-12">
               <div class="input-space">
                 <input formControlName="text" type="text">
                 <div *ngIf="reviewText.invalid && (reviewText.dirty || reviewText.touched)" class="alert alert-danger mt-1">
-                  <div *ngIf="reviewText.errors.required || reviewText.errors.notOnlyWhitespace">
+                  <div i18n *ngIf="reviewText.errors.required || reviewText.errors.notOnlyWhitespace">
                     Text is required
                   </div>
-                  <div *ngIf="reviewText.errors.minlength">
+                  <div i18n *ngIf="reviewText.errors.minlength">
                     must be at least 4 characters
                   </div>
                 </div>
@@ -23,7 +23,7 @@
 
         <!-- submit button-->
         <div class="text-center">
-          <button type="submit" class="btn btn-info">Add</button>
+          <button i18n type="submit" class="btn btn-info">Add</button>
         </div>
 
       </form>

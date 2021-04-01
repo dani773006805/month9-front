@@ -5,7 +5,6 @@ import {Luv2ShopValidators} from "../../validators/luv2-shop-validators";
 import {CartService} from "../../services/cart.service";
 import {CheckoutService} from "../../services/checkout.service";
 import {Router} from "@angular/router";
-import {error} from "util";
 
 @Component({
   selector: 'app-checkout',
@@ -31,10 +30,11 @@ export class CheckoutComponent implements OnInit {
   }
 
   ngOnInit(): void {
-
-    // this.reviewCartDetails();
-
-
+    this.cartService.takeCartDetailFromDatabase().subscribe(
+      data=>{
+        this.totalPrice=data['totalPrice'];
+      }
+    )
     this.checkoutFormGroup = this.formBuilder.group({
       creditCard: this.formBuilder.group({
         cardType: new FormControl('', [Validators.required]),
@@ -64,21 +64,6 @@ export class CheckoutComponent implements OnInit {
 
   }
 
-
-  // private reviewCartDetails() {
-  //
-  //   // subscribe to cartService.totalQuantity
-  //   this.cartService.totalQuantity.subscribe(
-  //     totalQuantity => this.totalQuantity = totalQuantity
-  //   );
-  //
-  //   // subscribe to cartService.totalPrice
-  //   this.cartService.totalPrice.subscribe(
-  //     totalPrice => this.totalPrice = totalPrice
-  //   );
-  // }
-
-
   get creditCardNameOnCard() {
     return this.checkoutFormGroup.get('creditCard.nameOnCard');
   }
@@ -101,11 +86,10 @@ export class CheckoutComponent implements OnInit {
       this.checkoutFormGroup.markAllAsTouched();
       return;
     }
-
-
+    if(this.totalPrice===0){
+      return;
+    }
     const creditCard = this.checkoutFormGroup.controls['creditCard'].value;
-    console.log(creditCard);
-
 
     this.checkoutService.placeOrder(creditCard).subscribe(
       {
@@ -114,7 +98,7 @@ export class CheckoutComponent implements OnInit {
         },
         error: err => {
           if (err.status === 201) {
-            alert(`Your order has been received`)
+            alert (`Your order has been received`)
             this.resetCart();
           } else {
             alert(`There was an error: ${err.message}`);

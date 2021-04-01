@@ -1,15 +1,15 @@
 <div class="main-content">
   <div class="section-content section-content-p30">
     <div class="container-fluid">
-      <h3>Your Orders</h3>
+      <h3 i18n>Your Orders</h3>
       <div *ngIf="orders.length>0">
         <table class="table table-bordered">
           <tr *ngFor="let order of orders">
             <td>
               <div>
-                <p>Total Price: {{order.totalPrice | currency:'USD'}}</p>
-                <p>Total Quantity: {{order.totalQuantity}}</p>
-                <p>Date of Purchase: {{order.dateCreated}}</p>
+                <p i18n>Total Price: {{order.totalPrice | currency:'USD'}}</p>
+                <p i18n>Total Quantity: {{order.totalQuantity}}</p>
+                <p i18n>Date of Purchase: {{order.dateCreated}}</p>
               </div>
               <div>
                 <div class="row">
@@ -20,7 +20,7 @@
                       <div class="price">Price: {{tem.unitPrice | currency:'USD'}}</div>
                       <div class="price">Units: {{tem.units}}</div>
                       <a routerLink="/review/{{tem.id}}">
-                        <button class="btn-sm btn-primary">add review</button>
+                        <button i18n class="btn-sm btn-primary">add review</button>
                       </a>
                     </div>
                   </div>
@@ -30,7 +30,7 @@
           </tr>
         </table>
       </div>
-      <div *ngIf="orders.length==0" class="alert alert-warning col-md-12" role="alert">
+      <div i18n *ngIf="orders.length==0" class="alert alert-warning col-md-12" role="alert">
         No orders found
       </div>
     </div>
